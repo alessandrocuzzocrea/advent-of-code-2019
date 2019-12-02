@@ -1,7 +1,7 @@
+# frozen_string_literal: true
+
 require './ShipComputer'
 require 'byebug'
-
-# frozen_string_literal: true
 
 computer = ShipComputer.new
 computer.load(File.read('input'))

@@ -1,12 +1,13 @@
-class ShipComputer
+# frozen_string_literal: true
 
+class ShipComputer
   def load(program_string)
     @memory = program_string.split(',').map(&:to_i)
     @pc = 0
   end
 
   def run
-    while peek(@pc) != 99 do
+    while peek(@pc) != 99
       if peek(@pc) == 1 # sum
         poke(peek(@pc + 3), peek(peek(@pc + 1)) + peek(peek(@pc + 2)))
       else # multiplication
@@ -25,6 +26,8 @@ class ShipComputer
   end
 
   private
+
   def exec; end
+
   def move_pc; end
 end
