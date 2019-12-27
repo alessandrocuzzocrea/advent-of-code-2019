@@ -36,7 +36,7 @@ def add_to_set(set, direction, length, curr_pos)
     new_pos.y = curr_pos.y + (1 * y)
     curr_pos.x = new_pos.x
     curr_pos.y = new_pos.y
-    p curr_pos
+    # p curr_pos
     set.add(new_pos)
   end
 end
